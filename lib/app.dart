@@ -5,49 +5,138 @@ class App extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final List<Map<String, String>> contacts = [
+      {
+        "name": "Rahim Ahmed",
+        "phone": "+8801712345678",
+        "email": "rahim@gmail.com",
+      },
+      {
+        "name": "Karim Hasan",
+        "phone": "+8801812345678",
+        "email": "karim@gmail.com",
+      },
+      {
+        "name": "Sakib Khan",
+        "phone": "+8801912345678",
+        "email": "sakib@gmail.com",
+      },
+      {
+        "name": "Nusrat Jahan",
+        "phone": "+8801612345678",
+        "email": "nusrat@gmail.com",
+      },
+      {
+        "name": "Tanjim Rahman",
+        "phone": "+8801512345678",
+        "email": "tanjim@gmail.com",
+      },
+      {
+        "name": "Sumaiya Akter",
+        "phone": "+8801312345678",
+        "email": "sumaiya@gmail.com",
+      },
+      {
+        "name": "Fahim Chowdhury",
+        "phone": "+8801412345678",
+        "email": "fahim@gmail.com",
+      },
+      {
+        "name": "Mehedi Hasan",
+        "phone": "+8801711223344",
+        "email": "mehedi@gmail.com",
+      },
+      {
+        "name": "Jannatul Ferdous",
+        "phone": "+8801811223344",
+        "email": "jannatul@gmail.com",
+      },
+      {
+        "name": "Arif Hossain",
+        "phone": "+8801911223344",
+        "email": "arif@gmail.com",
+      },
+    ];
+
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: AppBar(
-        backgroundColor: Colors.amber,
-        title: const Text('My Profile'),
-        actions: [
-          IconButton(onPressed: () {}, icon: Icon(Icons.add)),
-          IconButton(onPressed: () {}, icon: Icon(Icons.settings)),
-          IconButton(onPressed: () {}, icon: Icon(Icons.call)),
-        ],
+        centerTitle: true,
+        backgroundColor: Colors.lightBlue,
+        title: const Text(
+          'Contact List',
+          style: TextStyle(color: Colors.white),
+        ),
       ),
-      body: Container(
-        color: Colors.lightGreen.withValues(alpha: 0.5),
-        width: double.infinity,
-        height: MediaQuery.of(context).size.height / 1.4,
+      body: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 15.0, vertical: 15.0),
         child: Column(
           children: [
-            SizedBox(height: 20),
-            ClipOval(
-              child: Image.network(
-                'https://t3.ftcdn.net/jpg/06/19/40/62/360_F_619406204_iFaak6Ik8k9Iee8WHPeRBzZoktwT2RWD.jpg',
-                width: 200,
-                height: 200,
-                fit: BoxFit.cover,
+            TextFormField(
+              decoration: const InputDecoration(
+                labelText: 'Name',
+                border: OutlineInputBorder(),
               ),
             ),
-            SizedBox(height: 20),
-            Text(
-              'Ice cream is very delicious right?',
-              style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
-            ),
-            SizedBox(height: 40),
-            ClipOval(
-              child: Image.network(
-                'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSr8eaZDtAhweMJCr4OuouTY3C-pnUfrzIWV0PxPbrXDUFpLQWXh3PGb3w&s=10',
-                width: 200,
-                height: 200,
-                fit: BoxFit.cover,
+            const SizedBox(height: 15.0),
+            TextFormField(
+              decoration: const InputDecoration(
+                labelText: 'Mobile Number',
+                border: OutlineInputBorder(),
               ),
             ),
-            SizedBox(height: 20),
-            Text(
-              'Programming is not boring if you love it.',
-              style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+            const SizedBox(height: 15.0),
+            ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.lightBlue,
+                fixedSize: Size(MediaQuery.of(context).size.width - 30, 50),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(8.0),
+                ),
+              ),
+              onPressed: () {},
+              child: const Text('Add', style: TextStyle(color: Colors.white)),
+            ),
+            const SizedBox(height: 15.0),
+
+            Expanded(
+              child: ListView.builder(
+                itemCount: contacts.length,
+                itemBuilder: (context, index) {
+                  return Padding(
+                    padding: const EdgeInsets.only(bottom: 8.0),
+                    child: Container(
+                      decoration: BoxDecoration(
+                        color: Colors.grey[200],
+                        borderRadius: BorderRadius.circular(8.0),
+                      ),
+                      child: ListTile(
+                        leading: const CircleAvatar(
+                          backgroundColor: Colors.lightBlue,
+                          child: Icon(Icons.person, color: Colors.white),
+                        ),
+                        title: Text(
+                          contacts[index]['name']!,
+                          style: const TextStyle(
+                            fontWeight: FontWeight.bold,
+                            color: Colors.deepOrange,
+                          ),
+                        ),
+                        subtitle: Text(
+                          contacts[index]['phone']!,
+                          style: TextStyle(color: Colors.grey[700]),
+                        ),
+                        trailing: IconButton(
+                          icon: const Icon(Icons.call, color: Colors.blue),
+                          onPressed: () {
+                            // Handle call action
+                          },
+                        ),
+                      ),
+                    ),
+                  );
+                },
+              ),
             ),
           ],
         ),
