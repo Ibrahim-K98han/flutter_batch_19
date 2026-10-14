@@ -1,3 +1,4 @@
+
 # Flutter Profile UI 👤
 
 A modern and elegant **Profile UI** built with Flutter. This project demonstrates a clean profile screen with personal information, contact details, action buttons, and an interests section.
@@ -22,7 +23,7 @@ A modern and elegant **Profile UI** built with Flutter. This project demonstrate
 ## 📸 Screenshots
 
 <p align="center">
-  <img src="screenshots/profile_ui.png" width="300" alt="Flutter Profile UI Screenshot"/>
+  <img src="https://github.com/user-attachments/assets/3be9462c-974c-49c7-af2d-b756ffdb29fd" width="300" alt="Flutter Profile UI Screenshot"/>
 </p>
 
 ## 🚀 Getting Started
