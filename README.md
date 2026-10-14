@@ -1,19 +1,68 @@
-# flutter_batch_19
+# Flutter Profile UI 👤
 
-A new Flutter project.
+A modern and elegant **Profile UI** built with Flutter. This project demonstrates a clean profile screen with personal information, contact details, action buttons, and an interests section.
 
-## Getting Started
+## 📱 Features
 
-This project is a starting point for a Flutter application.
+- 👤 Profile picture and personal information
+- 💼 Professional title and bio
+- 📧 Email address and phone number
+- ➕ Follow button
+- 💬 Message button
+- 🌍 Interests section with images
+- ✨ Clean and modern UI design
+- 📱 Responsive layout for mobile devices
 
-A few resources to get you started if this is your first Flutter project:
+## 🛠️ Built With
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+- Flutter
+- Dart
+- Material Design
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-<img width="500" height="1097" alt="WhatsApp Image 2026-10-14 at 8 53 55 AM" src="https://github.com/user-attachments/assets/d50d1b87-9d45-450a-8e44-042b84452ac8" />
+## 📸 Screenshots
 
+<p align="center">
+  <img src="screenshots/profile_ui.png" width="300" alt="Flutter Profile UI Screenshot"/>
+</p>
+
+## 🚀 Getting Started
+
+Follow these steps to run the project locally.
+
+**1. Clone the repository**
+
+```bash
+git clone YOUR_REPOSITORY_URL
+```
+
+**2. Navigate to the project directory**
+
+```bash
+cd flutter_batch_19
+```
+
+**3. Install dependencies**
+
+```bash
+flutter pub get
+```
+
+**4. Run the application**
+
+```bash
+flutter run
+```
+
+## 🎯 Purpose
+
+The purpose of this project is to practice Flutter UI development and improve skills in building attractive, user-friendly mobile application interfaces.
+
+## 👨‍💻 Developer
+
+**Ibrahim Khan**
+
+Flutter Developer | Mobile App Development
+
+---
+
+⭐ If you like this project, feel free to star the repository!
