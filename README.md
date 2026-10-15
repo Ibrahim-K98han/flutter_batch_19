@@ -1,17 +1,29 @@
-# flutter_batch_19
+# 🩸 Blood Request UI
 
-A new Flutter project.
+A simple Blood Request screen built with Flutter.
 
-## Getting Started
+<p>
 
-This project is a starting point for a Flutter application.
+  <img src="[screenshots/blood_request.jpeg](https://github.com/user-attachments/assets/49ec196d-7d43-46d6-b152-aa5f48bef2b6)" alt="Blood Request Screen" width="300"/>
+</p>
 
-A few resources to get you started if this is your first Flutter project:
+## Features
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+- List of blood requests shown as cards
+- Urgent (red) and Normal (green) badges
+- Blood group, units needed and location on each card
+- View Details button
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
+## Run
+
+```bash
+git clone https://github.com/<your-username>/<your-repo-name>.git
+cd <your-repo-name>
+flutter pub get
+flutter run
+```
+
+## License
+
+MIT,
 samples, guidance on mobile development, and a full API reference.
